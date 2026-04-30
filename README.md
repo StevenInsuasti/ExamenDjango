@@ -1,13 +1,6 @@
 ﻿# InicioDeSesion - Laboratorio Django
 
-Proyecto de laboratorio con Django para gestionar calificaciones de estudiantes, incluyendo:
-
-- Autenticacion de usuarios (login/logout)
-- Roles por grupos (Editor y Cliente)
-- CRUD completo de `Calificacion`
-- Calculo automatico del promedio individual
-- Visualizacion del promedio general con `Avg`
-- Interfaz con Bootstrap y estilos personalizados
+Proyecto de laboratorio en Django para gestionar calificaciones de estudiantes.
 
 ## Estructura requerida
 
@@ -27,16 +20,11 @@ python manage.py runserver
 
 ## Rutas principales
 
+- `/`
+- `/registro/`
 - `/login/`
 - `/calificaciones/`
 - `/calificaciones/crear/`
 - `/calificaciones/<id>/editar/`
 - `/calificaciones/<id>/eliminar/`
 - `/promedio-general/`
-
-## Roles
-
-- **Editor**: ver, crear, editar y eliminar calificaciones.
-- **Cliente**: solo puede ver el listado.
-
-Los grupos se crean automaticamente al ejecutar migraciones.
