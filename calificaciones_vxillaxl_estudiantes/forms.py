@@ -25,8 +25,8 @@ class LoginForm(AuthenticationForm):
         widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Usuario"}),
     )
     password = forms.CharField(
-        label="Contrasena",
-        widget=forms.PasswordInput(attrs={"class": "form-control", "placeholder": "Contrasena"}),
+        label="Contraseña",
+        widget=forms.PasswordInput(attrs={"class": "form-control", "placeholder": "Contraseña"}),
     )
 
 
@@ -60,8 +60,8 @@ class RegistroUsuarioForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields["password1"].widget.attrs.update(
-            {"class": "form-control", "placeholder": "Contrasena"}
+            {"class": "form-control", "placeholder": "Contraseña"}
         )
         self.fields["password2"].widget.attrs.update(
-            {"class": "form-control", "placeholder": "Confirmar contrasena"}
+            {"class": "form-control", "placeholder": "Confirmar contraseña"}
         )
