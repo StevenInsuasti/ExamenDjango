@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Sistema de calificaciones{% endblock %}
+{% block content %}
+<section class="hero-wrap rounded-4 shadow-lg p-4 p-md-5 mb-4">
+  <div class="hero-overlay"></div>
+  <div class="row align-items-center g-4 position-relative">
+    <div class="col-lg-8">
+      <span class="eyebrow mb-3 d-inline-block">Plataforma academica</span>
+      <h1 class="display-5 fw-bold mb-3">Gestion inteligente de calificaciones</h1>
+      <p class="lead mb-4 hero-text">
+        Un entorno moderno para registrar estudiantes, actualizar notas y controlar el rendimiento del curso con una experiencia visual elegante.
+      </p>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-lg btn-light text-dark fw-semibold px-4" href="{% url 'registro' %}">Comenzar ahora</a>
+        <a class="btn btn-lg btn-outline-light px-4" href="{% url 'login' %}">Iniciar sesion</a>
+      </div>
+    </div>
+    <div class="col-lg-4 d-none d-lg-block">
+      <div class="hero-stat-card p-4 rounded-4">
+        <div class="stat-label">Sistema disponible</div>
+        <div class="stat-value">24/7</div>
+        <div class="stat-muted">Acceso seguro para estudiantes y docentes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row g-3">
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm rounded-4 h-100 feature-clean-card">
+      <div class="card-body">
+        <h3 class="h5">Interfaz profesional</h3>
+        <p class="text-muted mb-0">Diseno moderno con formularios limpios y navegacion clara.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm rounded-4 h-100 feature-clean-card">
+      <div class="card-body">
+        <h3 class="h5">Flujo agil</h3>
+        <p class="text-muted mb-0">Acciones directas para crear, editar y eliminar registros.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm rounded-4 h-100 feature-clean-card">
+      <div class="card-body">
+        <h3 class="h5">Analitica inmediata</h3>
+        <p class="text-muted mb-0">Visualizacion de promedios para seguimiento academico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
