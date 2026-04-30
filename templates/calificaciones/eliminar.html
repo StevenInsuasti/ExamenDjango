@@ -1,0 +1,15 @@
+﻿{% extends 'base.html' %}
+{% block title %}Eliminar calificacion{% endblock %}
+{% block content %}
+<div class="card border-0 shadow rounded-4">
+  <div class="card-body p-4">
+    <h2 class="h4 text-danger">Confirmar eliminacion</h2>
+    <p>Voy a eliminar el registro de <strong>{{ calificacion.nombre_estudiante }}</strong> en <strong>{{ calificacion.asignatura }}</strong>.</p>
+    <form method="post" class="d-flex gap-2">
+      {% csrf_token %}
+      <button class="btn btn-danger" type="submit">Eliminar</button>
+      <a class="btn btn-secondary" href="{% url 'listar_calificaciones' %}">Cancelar</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

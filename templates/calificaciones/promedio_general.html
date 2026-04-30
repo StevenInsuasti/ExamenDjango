@@ -1,0 +1,14 @@
+﻿{% extends 'base.html' %}
+{% block title %}Promedio general{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7 col-lg-6">
+    <div class="card border-0 shadow-lg rounded-4 p-4 text-center">
+      <h2 class="h4 mb-3">Promedio general del curso</h2>
+      <p class="display-5 fw-bold text-primary mb-2">{{ promedio_general|floatformat:2|default:'Sin datos' }}</p>
+      <p class="text-muted mb-4">Valor calculado con una agregacion de Django (Avg).</p>
+      <a href="{% url 'listar_calificaciones' %}" class="btn btn-outline-primary">Volver al listado</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
