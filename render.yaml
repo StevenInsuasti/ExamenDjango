@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: inicio-de-sesion-django
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate
+    startCommand: gunicorn evaluaciones_vxillaxl_estudiantes.wsgi:application
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: inicio-de-sesion-django.onrender.com
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://inicio-de-sesion-django.onrender.com
+      - key: SECRET_KEY
+        generateValue: true
