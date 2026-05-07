@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'calificaciones_vxillaxl_estudiantes',
+    'reservas_vxillaxl_estudiantes',
 ]
 
 MIDDLEWARE = [
@@ -128,5 +129,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'listar_calificaciones'
+LOGIN_REDIRECT_URL = 'reservas:inicio'
 LOGOUT_REDIRECT_URL = 'login'
