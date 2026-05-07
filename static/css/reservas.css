@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f7;
+  color: #1a1a1a;
+}
+
+.site-header {
+  background: #0f4c81;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dde2e7;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
